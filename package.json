@@ -1,0 +1,24 @@
+{
+  "name": "angulartodo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcalderon87/angularToDo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kcalderon87/angularToDo/issues"
+  },
+  "homepage": "https://github.com/kcalderon87/angularToDo#readme",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "express": "^4.15.0",
+    "mongoose": "^4.8.6"
+  }
+}

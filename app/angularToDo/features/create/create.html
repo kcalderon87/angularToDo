@@ -2,15 +2,15 @@
 
 <div class="flex">
 	<ul class="nav nav-tabs">
-	  <li role="presentation"><a ui-sref="/">List</a></li>
-	  <li role="presentation" class="#"><a href="active">Create</a></li>
+	  <li role="presentation"><a ui-sref="list">List</a></li>
+	  <li role="presentation" class="#"><a ui-sref="create">Create</a></li>
 	  <li role="presentation"><a ui-sref="completed">Completed</a></li>
 	</ul>
 
-	To-Do: <input type="text" ng-model="projectList.search" class="search-query" id="projects_search"
+	To-Do: <input type="test" name="toDo" ng-model="CreateVM.create.toDo" class="search-query" id="projects_search"
        placeholder="Enter your to-do here"> 
        <br>
-	Due By: <input type="date" ng-model="projectList.search" class="search-query" id="projects_search"
+	Due By: <input type="date" ng-model="CreateVM.create.completeby" class="search-query" id="projects_search"
    placeholder="Date">
 
    	<br>

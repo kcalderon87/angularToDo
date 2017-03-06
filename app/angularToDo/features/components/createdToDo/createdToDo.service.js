@@ -11,7 +11,7 @@ function CreatedToDoService() {
 
 	    ]
 
-	  function addToDo(toDoData) {
+	  function addToDo(todoData) {
 	  	toDo.push(todoData);
 	  }
 

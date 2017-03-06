@@ -1,8 +1,8 @@
 angular
     .module('angularToDo.component.toDoContent')
-    .directive('todocontent', toDoContent); 
+    .directive('todocontent', ToDoContent); 
 
-function toDoContent() {
+function ToDoContent() {
     return {
         restrict: 'E',
         scope: {
@@ -15,6 +15,6 @@ function toDoContent() {
     };
 }
 
-function ToDoCtrl() {
+function ToDoContentCtrl() {
     //var vm = this;
 }

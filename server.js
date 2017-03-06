@@ -10,8 +10,7 @@ mongoose.Promise = Promise;
 var app = express();
 var port = 3000;
 
-// require('.api/get-api.js');
-// app.use(express.static(__dirname + "/app"));
+app.use(express.static(__dirname + "/app"));
 
 app.listen(port, function() {
     console.log("listening on port:" + port);

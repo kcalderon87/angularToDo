@@ -3,8 +3,14 @@
 <div class="flex">
 	<ul class="nav nav-tabs">
 	  <li role="presentation" class="active"><a href="#">List</a></li>
-	  <li role="presentation"><a href="#">Create</a></li>
-	  <li role="presentation"><a href="#">Completed</a></li>
+	  <li role="presentation"><a ui-sref="create">Create</a></li>
+	  <li role="presentation"><a ui-sref="completed">Completed</a></li>
 	</ul>
+	
+	<create todocontent-data="CreateVM.create"
+			todo-data="todo">
+		
+	</create>
+
 </div>
 

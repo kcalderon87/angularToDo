@@ -6,8 +6,8 @@ angular
 
         // Features
         'angularToDo.list',
-        'angularToDo.create',
-        'angularToDo.completed'
+        'angularToDo.create'
+        //'angularToDo.completed'
     ])
     .config(appConfig);
 

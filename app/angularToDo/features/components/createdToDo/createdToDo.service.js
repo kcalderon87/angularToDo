@@ -12,7 +12,7 @@ function CreatedToDoService() {
 	    ]
 
 	  function addToDo(toDoData) {
-	  	toDo.push(toDoData);
+	  	toDo.push(todoData);
 	  }
 
 	return {

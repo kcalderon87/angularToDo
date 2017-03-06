@@ -1,10 +1,38 @@
-<h1>AngularJS To-Do</h1>
+<h1 class="page-header">AngularJS To-Do</h1>
 
 <div class="flex">
 	<ul class="nav nav-tabs">
-	  <li role="presentation" class="active"><a href="#">List</a></li>
-	  <li role="presentation"><a href="#">Create</a></li>
-	  <li role="presentation"><a href="#">Completed</a></li>
+	  <li role="presentation"><a ui-sref="/">List</a></li>
+	  <li role="presentation" class="#"><a href="active">Create</a></li>
+	  <li role="presentation"><a ui-sref="completed">Completed</a></li>
 	</ul>
+
+	To-Do: <input type="text" ng-model="projectList.search" class="search-query" id="projects_search"
+       placeholder="Enter your to-do here"> 
+       <br>
+	Due By: <input type="date" ng-model="projectList.search" class="search-query" id="projects_search"
+   placeholder="Date">
+
+   	<br>
+    <input type="button" value="Create To-Do" ng-click="CreateVM.addToDo()">
+
+	<table>
+	  <thead>
+	  <tr>
+	    <th>Project</th>
+	    <th>Description</th>
+	    <th><a href="#/new"><i class="icon-plus-sign"></i></a></th>
+	  </tr>
+	  </thead>
+	  <tbody>
+	  <tr ng-repeat="project in projectList.projects | filter:projectList.search | orderBy:'name'">
+	    <td><a ng-href="{{project.site}}" target="_blank">{{project.name}}</a></td>
+	    <td>{{project.description}}</td>
+	    <td>
+	      <a ng-href="#/edit/{{project.$id}}"><i class="icon-pencil"></i></a>
+	    </td>
+	  </tr>
+	  </tbody>
+	</table>
 </div>
 

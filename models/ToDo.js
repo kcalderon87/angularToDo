@@ -10,9 +10,12 @@ var ToDoSchema = new Schema({
   todo: {
     type: String
   },
-  // body: a string
-  createdBy: {
-    type: String
+  // timestamp
+  completeBy: {
+    time: { 
+    	type: Date, 
+		default: Date.now 
+	}
   }
 });
 

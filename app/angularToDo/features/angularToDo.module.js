@@ -5,9 +5,9 @@ angular
         'ui.router',
 
         // Features
-        'angularToDo.list'
-        //'createAHero.home',
-        //'createAHero.story'
+        'angularToDo.list',
+        'angularToDo.create',
+        'angularToDo.completed'
     ])
     .config(appConfig);
 

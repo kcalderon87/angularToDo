@@ -1,5 +1,4 @@
-angular.module('angularToDo.list', [
-    //'angularToDo.component.createdToDo',
-    //'angularToDo.component.toDo'
-
+angular
+  .module('angularToDo.list', [
+    //'angularToDo.component.listContent'
 ]);

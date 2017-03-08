@@ -2,7 +2,7 @@ angular
     .module('angularToDo.completed')
     .controller('CompletedCtrl', CompletedCtrl);
 
-function CompletedCtrl() {
-    var vm = this;
+function CompletedCtrl($stateParams) {
+	var vm = this;
 
 }

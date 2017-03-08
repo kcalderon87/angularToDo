@@ -1,4 +1,4 @@
-angular.module('angularToDo.completed', [
-    
+angular
+  .module('angularToDo.completed', [
 
 ]);

@@ -1,14 +1,14 @@
 angular
-    .module('angularToDo.completed') 
+    .module('angularToDo.completed')
     .config(completedConfig);
 
 function completedConfig($stateProvider) {
 
     $stateProvider.state({
-        name: 'completed',
-        url: '/', 
+        name: 'completed', 
+        url: '/completed', 
         templateUrl: '/angularToDo/features/completed/completed.html', 
-        controller: 'CompletedCtrl',
-        controllerAs: 'CompletedVM' 
+        controller: 'CompletedCtrl', 
+        controllerAs: 'CompletedVM'
     })
 }

@@ -1,17 +1,12 @@
-<h1>AngularJS To-Do</h1>
+<list-content>
 
-<div class="flex">
-	<ul class="nav nav-tabs">
-	  <li role="presentation" class="active"><a href="#">List</a></li>
-	  <li role="presentation"><a ui-sref="create">Create</a></li>
-	  <li role="presentation"><a ui-sref="completed">Completed</a></li>
-	</ul>
-	
-	<create todocontent-data="CreateVM.create"
-			todo-data="todo"
-			ui-sref="create(todo)">
-		
-	</create>
-
-</div>
-
+  <form name="myForm" ng-controller="ExampleController">
+  
+  <label>Value2:
+    <input type="checkbox" ng-model="checkboxModel.value2"
+           ng-true-value="'YES'" ng-false-value="'NO'">
+   </label><br/>
+  <tt>value2 = {{checkboxModel.value2}}</tt><br/>
+ </form>
+    
+</list-content>

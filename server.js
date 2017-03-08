@@ -14,8 +14,8 @@ mongoose.Promise = Promise;
 app.use(express.static(__dirname + "/app"));
 
 // DB
-mongoose.connect("mongodb://localhost/angularToDo");
-//mongoose.connect("mongodb://heroku_dnwxr6vh:lvtfhtjt0qqdshhoqaog9cftvo@ds123370.mlab.com:23370/heroku_dnwxr6vh");
+//mongoose.connect("mongodb://localhost/angularToDo");
+mongoose.connect("mongodb://heroku_dnwxr6vh:lvtfhtjt0qqdshhoqaog9cftvo@ds123370.mlab.com:23370/heroku_dnwxr6vh");
 var db = mongoose.connection;
 
 // Show any mongoose errors
